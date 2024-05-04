@@ -146,6 +146,9 @@ main .separator img {
   background-repeat: no-repeat;
   max-width: 931px;
 }
+.chats{
+  margin: 20px 15%;
+}
 .chats .conversation{
   display: flex;
   flex-direction: column;
@@ -839,11 +842,12 @@ footer small {
   font-weight: 400;
   font-family: AcuminC;
   text-align: left;
-  width: 256px;
-  height: 60px;
+  max-width: 256px;
   text-align: center;
   border: none;
   border-radius: 10px;
+  width: 100%;
+  padding: 10px;
 }
 
 .englishVersion{
@@ -925,7 +929,7 @@ footer small {
 }
 
 
-@media (min-width: 1050px) {
+@media (min-width: 1049px) {
   header {
     width: 100%;
   }
@@ -1278,7 +1282,7 @@ footer small {
     display: none;
   }
 }
-@media (max-width: 1050px) {
+@media (max-width: 1048px) {
   h1, h1 span{
     margin: 0 21px !important;
     font-size: 12vw !important;
@@ -1323,6 +1327,7 @@ footer small {
   }
   .story{
     display: inline;
+    margin: 30px 0; 
   }
   .story .p3 img{
     height: 43px !important;
@@ -1439,6 +1444,9 @@ footer small {
   .chats .patrullero, .chats .marquilla{
     width: 100%;
   }
+  .chats figcaption p, .bannerIframe figcaption p{
+    text-align: left;
+  }
 }
 
 @media(max-width:270px){
@@ -1447,12 +1455,6 @@ footer small {
   }
 }
 @media(max-width:440px){
-  .pair .patrulleroe, .chats .bgRed .sub, .pair .patrullero1{
-    width: 100%;
-    height: 100%;
-  }
-}
-@media(max-width:767px){
   .pair .patrulleroe, .chats .bgRed .sub, .pair .patrullero1{
     width: 100%;
     height: 100%;
