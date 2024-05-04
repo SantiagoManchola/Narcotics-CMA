@@ -19,6 +19,10 @@
   font-family: AcuminCItalic;
   src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin\ Pro\ Cond\ Light.otf);
 }
+@font-face {
+  font-family: AcuminPSemiBold;
+  src: url(/assets/fonts/acumin-pro/Acumin-Pro/AcuminProCondensed/Acumin\ Pro\ Cond\ Semibold.otf);
+}
 * {
   padding: 0;
   margin: 0;
@@ -724,6 +728,9 @@ footer small {
   color: black;
   font-family: "AcuminPBlack";
 }
+.bannerVerde h3 b i{
+  color: black;
+}
 .bannerWhite{
   background: url("/assets/images/bgWhite.png") center;
   background-size: cover;
@@ -829,27 +836,39 @@ footer small {
   line-height: 40px;
   font-size: 28px;
   font-weight: 400;
-  font-family: AcuminC;
+  font-family: AcuminPSemiBold;
   text-align: left;
   color: black;
 }
 
-.bannerAmarillo .containerAmarillo .containerRightAmarillo button, .credits button{
+.bannerAmarillo .containerAmarillo .containerRightAmarillo button, .credits a{
   color: white;
   background-color: #D92429;
   line-height: 40px;
   font-size: 28px;
   font-weight: 400;
-  font-family: AcuminC;
+  font-family: AcuminPBlack;
   text-align: left;
-  max-width: 256px;
+  max-width: 265px;
   text-align: center;
   border: none;
   border-radius: 10px;
   width: 100%;
   padding: 10px;
+  text-decoration: none;
 }
-
+.story p{
+  font-size: 30px;
+  line-height: 32px;
+  font-family: 'AcuminPBlack';
+  color: black;
+}
+.story p i{
+  color: black;
+}
+.story p i span{
+  font-family: 'AcuminPBlack';
+}
 .englishVersion{
   display: flex;
   flex-direction: row;
