@@ -164,15 +164,17 @@ main .separator img {
   background-position: center;
   background-size: contain;
 }
+.chats .conversation .topContainer .name{
+  display: none;
+}
 .chats .conversation .bgRedLong .imgPe{
-  max-width: 500px;
-  height: 249px;
-  width: auto;
+  max-width: 400px;
+  width: 100%;
 }
 .chats .conversation .bgRedLong .imgP1{
   max-width: 500px;
-  height: 284px;
-  width: auto;
+  max-height: 284px;
+  width: 100%;
 }
 .name .pPe{
   display: flex;
@@ -206,6 +208,7 @@ main .separator img {
 .message p{
   padding: 11px 50px;
   color: black;
+  max-width: 550px;
 }
 .bgRed{
   display: flex;
@@ -1455,32 +1458,62 @@ footer small {
     height: 100%;
   }
 }
-/* Media query para dispositivos con un ancho máximo de 768px (típicamente dispositivos móviles) */
-@media only screen and (max-width: 768px) {
-  .chats .conversation .conv1, .chats .conversation .conv2 {
-    flex-direction: column; /* Cambiar la dirección del flex a columna */
-    align-items: center; /* Centrar los elementos horizontalmente */
+@media(max-width:768px){
+  .chats .conversation .topContainer .name{
+    display: block;
   }
-
-  .bgRedLong {
-    order: 1; /* Cambiar el orden de la imagen para que aparezca antes */
-    margin-bottom: 10px; /* Añadir espacio entre la imagen y el nombre */
+  .chats .container-message .name{
+    display: none;
   }
-
-  .container-message {
-    order: 3; /* Cambiar el orden del contenedor de mensajes para que aparezca después */
-    text-align: center; /* Alinear el texto al centro */
+  .chats .conversation .conv1, .chats .conversation .conv2{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 53px;
+    min-height: 0px;
   }
-
-  .name {
-    order: 2; /* Cambiar el orden del nombre para que aparezca después de la imagen */
-    margin-bottom: 10px; /* Añadir espacio entre la imagen y el nombre */
+  .chats .conversation .conv1 .topContainer, .chat .conversation .conv2 .topContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    order: -1;
   }
-
-  .messageLeft {
-    order: 4; /* Cambiar el orden del mensaje para que aparezca después del nombre */
+  .chats .conversation .conv2 .topContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    order: -1;
+    gap: 20px;
+  }
+  .conv2 .bgRedLong{
+    order: -1;
+  }
+  .messageLeft{
+    background-image: url("/assets/images/rightMessage.png");
+  }
+  .messageRight{
+    background-image: url("/assets/images/bgMessageLarge.png");
+  }
+  .imgPe{
+    max-height: 200px !important;
+  }
+  .imgP1{
+    max-height: 200px !important;
+  }
+  .chats{
+    margin: 0 36px;
+  }
+  .messageLeft p{
+    text-align: left;
+    padding: 0 10px;
+  }
+  .messageRight p{
+    text-align: right;
+    padding: 0 10px 0 20px;
   }
 }
+
 
 
 /*# sourceMappingURL=styles.css.map */
