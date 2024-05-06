@@ -5,19 +5,6 @@ const sectionNew = document.querySelectorAll(".sectionNew");
 
 // Function to apply classes based on the scroll
 
-document.getElementById('miIframe').addEventListener('load', function() {
-  // Obtiene el documento del iframe
-  var iframeDoc = document.getElementById('miIframe').contentDocument || document.getElementById('miIframe').contentWindow.document;
-
-  // Encuentra todos los scripts dentro del documento del iframe
-  var scripts = iframeDoc.getElementsByTagName('script');
-  
-  // Itera sobre todos los scripts y agrega el atributo 'async'
-  for (var i = 0; i < scripts.length; i++) {
-      scripts[i].setAttribute('async', true);
-  }
-});
-
 function isScrolled(value) {
   if (window.scrollY > value) {
     header.classList.add("scrolled");
