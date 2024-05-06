@@ -121,7 +121,12 @@ main .separator {
 main .separator img {
   width: 100%;
 }
-
+footer small a{
+  color: white;
+  text-decoration: none;
+  font-family: AcuminCItalic;
+  font-weight: 900;
+}
 .loop, .video {
   margin-top: 72px;
   width: 100%;
@@ -229,7 +234,7 @@ main .separator img {
 }
 .pair .patrullero1{
   max-height: 290px; 
-  max-width: 558px;
+  max-width: 272px;
   z-index: 1; 
 }
 .pair .patrulleroe{
@@ -1531,6 +1536,9 @@ footer small {
   .messageRight p{
     text-align: right;
     padding: 0 10px 0 20px;
+  }
+  .bannerMapa iframe{
+    height: 379px;
   }
 }
 
