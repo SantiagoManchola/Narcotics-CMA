@@ -501,7 +501,8 @@ h2 .lastSpan {
 .maps figcaption img {
   width: 21px;
   height: 16px;
-  margin-top:4px;
+  margin-top:3px;
+  margin-right: 12px;
 }
 .loop figcaption p,
 .video figcaption p,
@@ -581,7 +582,8 @@ h2 .lastSpan {
   font-family: AcuminCItalic;
 }
 .credits img {
-  width: 100%;
+  min-width: 460px;
+  max-width: 460px;
 }
 
 footer {
@@ -593,7 +595,7 @@ footer {
 }
 footer figure {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 50px;
@@ -706,6 +708,8 @@ footer small {
 }
 .bannerVerde{
   width: 100%;
+  max-width: 1485px;
+  align-self: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1260,6 +1264,9 @@ footer small {
   }
   .story section {
     margin: 0;
+    max-width: 801px;
+    min-width: 801px;
+}
   }
   .textFinal {
     width: 70%;
@@ -1275,8 +1282,9 @@ footer small {
     max-width: 573px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
+    gap: 32px;
   }
   .credits section h4{
     font-size: 30px;
@@ -1296,14 +1304,12 @@ footer small {
   .carrousel__news button {
     bottom: 0;
   }
-  footer figure {
-    flex-direction: row;
-    gap: 100px;
-  }
   .inIcon{
     display: none;
   }
-}
+  .outCamera{
+    display: none;
+  }
 @media (max-width: 1048px) {
   h1, h1 span{
     margin: 0 21px !important;
@@ -1359,8 +1365,15 @@ footer small {
     margin: 0 45px;
     padding: 46px 10px !important;
   }
+  .story .p3 p{
+    font-size: 23px;
+    line-height: 28px;
+  }
   .story .outIcon{
-    visibility: hidden;
+    display: none;
+  }
+  .story .inIcon{
+    display: block;
   }
   .bannerAmarillo{
     background-image: url(/assets/images/bgAmarilloMovil.webp);
@@ -1446,13 +1459,18 @@ footer small {
     width: 32px;
     margin-top: 10px;
   }
-
+  footer figure{
+    flex-direction: column;
+  }
 }
 @media(max-width: 700px){
   .credits{
     display: flex;
     flex-direction: column;
     gap: 12px;
+  }
+  .credits section{
+    align-items: center;
   }
   .pair{
     display: flex;
@@ -1469,7 +1487,14 @@ footer small {
   .chats figcaption p, .bannerIframe figcaption p{
     text-align: left;
   }
+  .inCamera{
+    display: none;
+  }
+  .outCamera{
+    display: block;
+  }
 }
+
 
 @media(max-width:270px){
   footer figure img {
