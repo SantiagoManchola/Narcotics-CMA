@@ -582,8 +582,8 @@ h2 .lastSpan {
   font-family: AcuminCItalic;
 }
 .credits img {
-  min-width: 460px;
-  max-width: 460px;
+  width: 100%;
+  max-width: 283px;
 }
 
 footer {
@@ -1191,6 +1191,7 @@ footer small {
   .trepador figcaption p,
   .maps figcaption p {
     text-align: center;
+    
   }
   .evidence {
     width: 70%;
@@ -1462,12 +1463,27 @@ footer small {
   footer figure{
     flex-direction: column;
   }
+  .chats figcaption p{
+    font-size: 19px;
+    line-height: 20px;
+  }
+}
+@media(min-width:700px){
+  .credits img {
+    max-width: 440px;
+    min-width: 440px;
+  }
 }
 @media(max-width: 700px){
   .credits{
     display: flex;
     flex-direction: column;
     gap: 12px;
+    margin: 0 0 45px 0;
+  }
+  .credits section h4{
+    font-size: 18.21px;
+    line-height: 21.2px;
   }
   .credits section{
     align-items: center;
