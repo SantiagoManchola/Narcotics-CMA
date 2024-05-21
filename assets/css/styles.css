@@ -109,6 +109,8 @@ main .p2 {
 main .p2 span{
   background: #D92429;
   font-weight: bold;
+  font-family: AcuminPBlack;
+  padding-inline: 5px;
 }
 main strong {
   font-weight: 900;
@@ -327,6 +329,8 @@ h2 small {
   font-weight: 950;
   font-family: Acumin Wide;
   padding-inline: 5px;
+  position: relative;
+  padding: 10px;
 }
 h2 span {
   font-weight: 600;
@@ -336,12 +340,15 @@ h2 span {
   color: #000000;
   text-align: center;
   font-family: AcuminCItalic;
-  padding-inline: 10px;
+  padding-inline: 5px;
   line-height: 45px;
+  position: relative;
+  padding: 10px;
 }
 h2 .lastSpan {
   color: #FFFFFF;
-  margin-top: -5px;
+  padding-inline: 5px;
+  position: relative;
 }
 
 .chats{
@@ -848,7 +855,7 @@ footer small {
   color: black;
 }
 
-.bannerAmarillo .containerAmarillo .containerRightAmarillo button, .credits a{
+.bannerAmarillo .containerAmarillo .containerRightAmarillo a, .credits a{
   color: white;
   background-color: #D92429;
   line-height: 40px;
