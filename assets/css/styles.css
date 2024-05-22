@@ -1494,8 +1494,12 @@ footer small {
     width: 32px;
     margin-top: 10px;
   }
+  footer{
+    padding-top: 0;
+  }
   footer figure{
     flex-direction: column;
+    gap: 20px;
   }
   .chats figcaption p{
     font-size: 19px;
