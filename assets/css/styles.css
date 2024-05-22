@@ -104,7 +104,7 @@ main h1 span{
 main p {
   font-family: AcuminC;
   font-weight: 700;
-  font-size: 23px;
+  font-size: 26px;
   text-align: center;
 }
 main a *, main a {
@@ -986,7 +986,9 @@ footer small {
   align-items: center;
   text-decoration: none;
 }
-
+.chats .marquilla{
+  width: 60%;
+}
 
 @media (min-width: 1049px) {
   header {
