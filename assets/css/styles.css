@@ -64,7 +64,7 @@ main {
 }
 main h1 {
   color: white;
-  font-size: 52px;
+  font-size: 42px;
   font-weight: 900;
   line-height: 38px;
   text-align: center;
@@ -81,13 +81,25 @@ main h2 {
   margin: 20px 0;
   font-family: Acumin ExtraCondensed;
 }
+h2 .indented {
+  display: inline-block;
+  padding: 0;
+  padding-inline: 7.5px;
+  color: white;
+  font-size: 36px;
+  line-height: 32px;
+}
 
 main h1 strong {
   font-weight: 600;
   font-family: Acumin ExtraCondensed;
 }
 main h1 span{
-  color:#D92429
+  color:#D92429;
+  margin: 0 21px !important;
+  font-size: 42px !important;
+  line-height: 38px !important;
+  margin-bottom: 31px !important;
 }
 main p {
   font-family: AcuminC;
@@ -142,9 +154,23 @@ footer small a{
 .sequence{
   width: 100%;
 }
-.loop img {
+.loop img.mobileImg {
   max-height: 65vh;
   max-width: 100%;
+  display: block;
+}
+.loop img.desktopImg{
+  display: none;
+}
+@media(min-width:900px){
+  main .loop img.mobileImg {
+    display: none !important;
+  }
+  .loop img.desktopImg{
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
 }
 .pair{
   position: relative;
@@ -323,15 +349,16 @@ h2 {
   text-transform: uppercase;
   height: 100%;
 }
-h2 small {
-  font-size: 50px;
+h2.title small {
+  font-size: 36px;
   color: #000000;
-  line-height: 45px;
+  line-height: 32px;
   font-weight: 950;
   font-family: Acumin Wide;
-  padding-inline: 5px;
+  text-decoration: none;
   position: relative;
-  padding: 10px;
+  display: inline-block;
+  padding-inline: 7.5px;
 }
 h2 span {
   font-weight: 600;
@@ -341,15 +368,13 @@ h2 span {
   color: #000000;
   text-align: center;
   font-family: AcuminCItalic;
-  padding-inline: 5px;
   line-height: 45px;
   position: relative;
-  padding: 10px;
 }
 h2 .lastSpan {
   color: #FFFFFF;
-  padding-inline: 5px;
-  position: relative;
+  line-height: 22px;
+  padding: 20px 0;
 }
 
 .chats{
@@ -489,7 +514,7 @@ h2 .lastSpan {
 .maps figcaption {
   color: #FFFFFF;
   display: flex;
-  gap: 10px;
+  gap: 5px;
   padding: 1em;
 }
 .loop figcaption img,
@@ -510,7 +535,7 @@ h2 .lastSpan {
   width: 21px;
   height: 16px;
   margin-top:3px;
-  margin-right: 12px;
+  margin-right: 2px;
 }
 .loop figcaption p,
 .video figcaption p,
@@ -1237,10 +1262,6 @@ footer small {
   .policies .over {
     margin-top: 0;
   }
-  h2 {
-    width: 100%;
-    margin-inline: 15%;
-  }
   .map,
   .flourish-embed-iframe,
   .flourish-chart {
@@ -1319,20 +1340,23 @@ footer small {
   .outCamera{
     display: none;
   }
-@media (max-width: 1048px) {
-  h1, h1 span{
-    margin: 0 21px !important;
-    font-size: 12vw !important;
-    line-height: 12vw !important;
-    margin-bottom: 31px !important;
+  @media(min-width:900px){
+    h2.title small{
+      font-size: 50px;
+      line-height: 45px;
+    }
+    main h1,main h1 span, main h1 strong{
+      font-size: 80px !important;
+      line-height: 77px !important;
+    }
+    h2 .indented {
+      font-size: 50px;
+      line-height: 45px !important;
+    }
   }
+@media (max-width: 1048px) {
   .p1,.p2{
     margin: 0 36px !important;
-  }
-  h2 small,
-  h2 span {
-    font-size: 10vw !important;
-    line-height: 11vw !important;
   }
   .maersk {
     padding: 5px;
