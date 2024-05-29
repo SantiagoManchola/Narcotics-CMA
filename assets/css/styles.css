@@ -942,9 +942,10 @@ footer small {
   font-weight: normal;
   margin-right: 15px;
 }
-.englishVersion .textContainer p span{
+.englishVersion .textContainer p a{
   background-color: #F4A23E;
   color: black;
+  text-decoration: none;
 }
 .preFooter{
   background: url("../images/fondoamarilloPc.webp") center no-repeat;
